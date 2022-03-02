@@ -1,5 +1,9 @@
 on: [push]
 
+env:
+  BIZFLY_CLOUD_EMAIL: ${{ secrets.BIZFLYCLOUD_EMAIL }}
+  BIZFLY_CLOUD_PASSWORD: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
+
 jobs:
   test_action:
     runs-on: ubuntu-latest
