@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install doctl
-        uses: bizflycloud/action-bizflyctl@v0.6
+        uses: bizflycloud/action-bizflyctl@v0.7
         id: hello
         with:
           version:  "v0.2.1"
