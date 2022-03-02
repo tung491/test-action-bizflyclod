@@ -19,5 +19,5 @@ jobs:
       - name: Run bizflyctl
         run: bizfly server list
         env:
-          email: ${{ secrets.BIZFLYCLOUD_EMAIL }}
-          password: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
+          BIZFLY_CLOUD_EMAIL: ${{ secrets.BIZFLYCLOUD_EMAIL }}
+          BIZFLY_CLOUD_PASSWORD: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
