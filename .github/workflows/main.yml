@@ -16,8 +16,5 @@ jobs:
           version:  "v0.2.1"
           email: ${{ secrets.BIZFLYCLOUD_EMAIL }}
           password: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
-        env:
-          BIZFLY_CLOUD_EMAIL: ${{ secrets.BIZFLYCLOUD_EMAIL }}
-          BIZFLY_CLOUD_PASSWORD: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
       - name: Run bizflyctl
         run: bizfly server list
