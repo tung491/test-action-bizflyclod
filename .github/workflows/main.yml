@@ -10,11 +10,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install doctl
-        uses: bizflycloud/action-bizflyctl@v0.8
+        uses: bizflycloud/action-bizflyctl@v0.9
         id: hello
         with:
           version:  "v0.2.1"
           email: ${{ secrets.BIZFLYCLOUD_EMAIL }}
           password: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
+        env:
+          BIZFLY_CLOUD_EMAIL: ${{ secrets.BIZFLYCLOUD_EMAIL }}
+          BIZFLY_CLOUD_PASSWORD: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
       - name: Run bizflyctl
         run: bizfly server list
