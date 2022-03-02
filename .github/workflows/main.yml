@@ -3,14 +3,14 @@ on: [push]
 jobs:
   test_action:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Dm Cuoc Doi
     steps:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install doctl
-        uses: bizflycloud/action-bizflyctl@v0.4
+        uses: bizflycloud/action-bizflyctl@v0.5
         id: hello
         with:
           version:  "v0.2.1"
