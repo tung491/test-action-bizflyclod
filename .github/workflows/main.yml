@@ -14,6 +14,7 @@ jobs:
         id: hello
         with:
           version:  "v0.2.1"
+        env:
           email: ${{ secrets.BIZFLYCLOUD_EMAIL }}
           password: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
       - name: Run bizflyctl
