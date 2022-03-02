@@ -17,4 +17,4 @@ jobs:
           email: ${{ secrets.BIZFLYCLOUD_EMAIL }}
           password: ${{ secrets.BIZFLYCLOUD_PASSWORD }}
       - name: Run bizflyctl
-        run: bizflyctl server list
+        run: bizfly server list
