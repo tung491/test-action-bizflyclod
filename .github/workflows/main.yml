@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  test_action:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install doctl
-        uses: bizflycloud/action-bizflyctl@v1.1
+        uses: bizflycloud/action-bizflyctl@v1.2
         id: hello
         with:
           version:  "v0.2.1"
